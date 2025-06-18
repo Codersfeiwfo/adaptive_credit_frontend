@@ -1,12 +1,42 @@
-# React + Vite
+# SmartRepayment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SmartRepayment is a web application that helps users create flexible loan repayment schedules based on their income patterns.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+├── backend/           # Python Flask backend
+│   ├── app.py
+│   ├── routes/
+│   ├── services/
+│   ├── models/
+│   └── tests/
+└── frontend/         # React frontend
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   └── api/
+    └── public/
+```
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend Setup
+1. Navigate to the backend directory
+2. Create a virtual environment: `python -m venv venv`
+3. Activate the virtual environment:
+   - Windows: `venv\Scripts\activate`
+   - Unix/MacOS: `source venv/bin/activate`
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run the server: `python app.py`
+
+### Frontend Setup
+1. Navigate to the frontend directory
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+
+## Features
+- Upload and parse income data from CSV files
+- Generate flexible repayment schedules based on income patterns
+- Visualize repayment plans with interactive charts
+- Export repayment plans as PDF documents 
