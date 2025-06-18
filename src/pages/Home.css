@@ -1,0 +1,36 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.upload-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.results-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .results-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .results-section > * {
+    flex: 1;
+    min-width: 300px;
+  }
+} 

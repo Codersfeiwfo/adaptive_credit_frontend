@@ -1,0 +1,39 @@
+.upload-form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropzone.active {
+  border-color: #2196f3;
+  background-color: #e3f2fd;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.upload-content p {
+  margin: 0;
+  color: #666;
+}
+
+.upload-hint {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.dropzone:hover {
+  border-color: #2196f3;
+  background-color: #f5f5f5;
+} 

@@ -1,0 +1,36 @@
+.schedule-chart {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-chart h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* Customize Recharts tooltip */
+.recharts-tooltip-wrapper {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recharts-tooltip-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.recharts-tooltip-item {
+  color: #666;
+} 
